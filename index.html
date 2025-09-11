@@ -1,140 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Awesome Links</title>
+  <title>Awesome Links - Improved</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <style>
-  h3 {text-align: center;}
+    :root {
+      --bg-color: #f8f9fa;
+      --text-color: #212529;
+      --card-bg: #ffffff;
+      --card-border: #dee2e6;
+      --header-bg: #0d6efd;
+      --header-text: #ffffff;
+      --link-color: #0d6efd;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .dark-mode {
+      --bg-color: #212529;
+      --text-color: #f8f9fa;
+      --card-bg: #343a40;
+      --card-border: #495057;
+      --header-bg: #343a40;
+      --header-text: #ffffff;
+      --link-color: #6ea8fe;
+    }
+
+    .header-section {
+      background-color: var(--header-bg);
+      color: var(--header-text);
+      transition: background-color 0.3s;
+    }
+
+    .header-section h1 {
+        font-weight: 300;
+    }
+    
+    .header-section a {
+      color: #cff4fc;
+      text-decoration: none;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border-color: var(--card-border);
+      transition: background-color 0.3s, border-color 0.3s;
+      height: 100%;
+    }
+
+    .card-header {
+      font-weight: 500;
+      background-color: rgba(0,0,0,0.05);
+    }
+
+    .list-group-item {
+      background-color: transparent;
+      border: none;
+      padding-left: 0;
+    }
+    
+    .list-group-item a {
+        text-decoration: none;
+        color: var(--link-color);
+    }
+
+    .list-group-item a:hover {
+        text-decoration: underline;
+    }
+    
+    .list-group-item .fa-solid, .list-group-item .fa-brands {
+        margin-right: 10px;
+        width: 15px;
+        text-align: center;
+    }
+
+    /* Hide list items that don't match the search */
+    .link-item.hide {
+        display: none;
+    }
+
   </style>
 </head>
 <body>
 
-<div class="container-fluid p-1 bg-primary text-white text-center">
-
-  <h1>Awesome Links</h1>
-  <P>inspired by <a href="https://github.com/gavindsouza/awesome-frappe" target="blank">Awesome Frappe</a></P>
-</div>
+<header class="header-section container-fluid p-4 text-white text-center shadow-sm">
+  <div class="d-flex justify-content-center align-items-center position-relative">
+      <h1 class="mb-1">Awesome Links</h1>
+      <button id="theme-toggle" class="btn btn-light position-absolute" style="right: 20px;">
+          <i class="fa-solid fa-moon"></i>
+      </button>
+  </div>
+  <p class="mb-0">Inspired by <a href="https://github.com/gavindsouza/awesome-frappe" target="_blank">Awesome Frappe</a></p>
+</header>
   
-<div class="container mt-2">
-  <div class="row">
-    <div class="col-6 col-md-4 col-lg-3">
-      <h3>Eng Books</h3><hr>
-      <ul class="ml-3">
-        <li><a href="https://docs.google.com/document/d/13CVBbDhXAxDjC--0Ws5jJxL14NjHPmSuMnYBS0P92Xs/edit" target="_blank">Raghuram Rajan - I do What I do</a> </li>
-        <li><a href="https://docs.google.com/document/d/e/2PACX-1vSyw4kYP3VlnEN-B3FuqHvFeZYm0naFqV8_YP_JrbV_M7iO90uihI_QgPz13pseTiSxy92BisWqJbxt/pub" target="_blank">कश्मीर और कश्मीरी पंडित</a> </li>
-        <li><a href="https://docs.google.com/document/d/1u5kgj_BGNCV33LAzmMKlbsw78rfGsCmganTryE1smVk/edit?usp=drivesdk" target="_blank">Rakesh Shah audio Transcription</a> </li>
-        <li><a href="https://docs.google.com/document/d/1A0QzIhnWxtbt13hVj1BdzfVwSVyKVdqv/edit" target="_blank">Standard Operating Procedure - SOP</a> </li>
-        <li><a href="https://showoffsop.neocities.org/" target="_blank">SOP Website</a> </li>
-        <li><a href="https://ebookfoundation.github.io/free-programming-books/books/free-programming-books-langs.html" target="_blank">Free Programming Books</a> </li>
-        <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRwv9y0hxMiFiHBO3D8OYS_SLoAr_gRe3wj0BGNtLnCBfjQsy01RVyNrXQY99KCqc13Hu-eac0xuRxn/pubhtml?gid=272346156&single=true" target="_blank">NSE-Deliverywise Stocks</a> </li>
-        <li><a href="https://html.com" target="_blank">HTML</a> </li>
-        <li><a href="https://web.dev/learn/css" target="_blank">CSS</a> </li>
-        <li><a href="https://javascript.info" target="_blank">JavaScript</a> </li>
-        <li><a href="https://react-tutorial.app" target="_blank">React</a> </li>
-        <li><a href="https://rapidapi.com/learn" target="_blank">API</a> </li>
-        <li><a href="https://learnpython.org" target="_blank">Python</a> </li>
-        <li><a href="https://w3schools.com/sql" target="_blank">SQL</a> </li>
-        <li><a href="https://git-scm.com/book" target="_blank">Git</a> </li>
-        <li><a href="https://ia801308.us.archive.org/26/items/ramjandarga.basavannamattuam0000ramj/ramjandarga.basavannamattuam0000ramj_djvu.txt" target="_blank">ಬಸವಣ್ಣ ಮತ್ತು ಅಂಬೇಡ್ಕರ್ ಹಾಗೂ ಇತರೆ ಲೇಖನಗಳು</a> </li>
-        <li><a href="https://ia801308.us.archive.org/26/items/ramjandarga.basavannamattuam0000ramj/ramjandarga.basavannamattuam0000ramj_djvu.txt" target="_blank">धन-संपत्ति का मनोविज्ञान </a> </li>
-        <li><a href="https://ia801308.us.archive.org/26/items/ramjandarga.basavannamattuam0000ramj/ramjandarga.basavannamattuam0000ramj_djvu.txt" target="_blank">रिच डेंड पअर डैंड</a> </li>
-        <li><a href="https://dn790004.ca.archive.org/0/items/accha-bolne-ki-kala-read/Accha%20Bolne%20Ki%20Kala_djvu.txt" target="_blank">अच्छा बोलने की कला</a> </li>
-        <li><a href="https://archive.org/download/20200916_20200916_1251/%E0%A4%B6%E0%A4%95%E0%A5%8D%E0%A4%A4%E0%A4%BF%E0%A4%A6%E0%A4%BE%E0%A4%AF%E0%A5%80%20%E0%A4%B5%E0%A4%BF%E0%A4%9A%E0%A4%BE%E0%A4%B0%20%28%E0%A4%B8%E0%A5%8D%E0%A4%B5%E0%A4%BE%E0%A4%AE%E0%A5%80%20%E0%A4%B5%E0%A4%BF%E0%A4%B5%E0%A5%87%E0%A4%95%E0%A4%BE%E0%A4%A8%E0%A4%82%E0%A4%A6%29_djvu.txt" target="_blank">शक्तिदायी विचार (स्वामी विवेकानंद)</a> </li>
-      </ul>
-    </div>
-    <div class="col-6 col-md-4 col-lg-3">
-      <h3>Stock Market</h3><hr>
-      
-      <ul class="ml-3">
-        <li><a href="https://docs.google.com/document/d/e/2PACX-1vS2qm4yyu4MjTxM9XEXiPaGZ1nbyBZlp-I6bw_IDYcjwM76OcvlnwYsk-BkJEUSBw/pub" target="_blank">Modern Programming Made Easy</a><span>by Adam L. Davis</span> </li>
-        <li><a href="https://docs.google.com/document/d/e/2PACX-1vQlY5hCfbOD1PwR6gy-D0evJLzoC5C2Gz-L7TP9GwVqiDoNOPD7Yucyank651WV3w/pub" target="_blank">Competitive Programmer’s Handbook by Antti Laaksonen</a> </li>
-        <li><a href="https://docs.google.com/document/d/e/2PACX-1vSox2gObERiooXBLwD67aOsIbRAQYwrmDcinQo3ky8Efxba-F42kmmbsfL_daaMPw/pub" target="_blank">Kernighan, Ritchie - The C Programming Language, 2nd edition</a> </li>
-        <li><a href="https://docs.google.com/document/d/e/2PACX-1vROVfkocX-ydWIy4Uf27hlBhD6jRxzEzHFwsxZElvKn_UgYni3pAu-iIz2Ti8Egmw/pub" target="_blank">Pro Vim by Mark McDonell</a> </li>
-        <li><a href="https://docs.google.com/document/d/e/2PACX-1vRLT-UG96Y9DO_O4Fvp6NFxbe0O8qryBuM-o2BE3UdqAqujygnQ9LTGi0nQ4cMwOg/pub" target="_blank">Computer_Programming_for_Beginn_-_Ryan_Turner</a> </li>
-        <li><a href="https://ebookfoundation.github.io/free-programming-books/books/free-programming-books-langs.html" target="_blank">Free Programming Books</a> </li>
-        <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRwv9y0hxMiFiHBO3D8OYS_SLoAr_gRe3wj0BGNtLnCBfjQsy01RVyNrXQY99KCqc13Hu-eac0xuRxn/pubhtml?gid=272346156&single=true" target="_blank">NSE-Deliverywise Stocks</a> </li>
-        <li><a href="https://docs.google.com/document/d/e/2PACX-1vSpBTqU6zPWFaapFAvCQ41xMd1o3CnyzSqpq2DYNBTfZ8p8t7LiixttbFgPkk1nEw/pub" target="_blank">Think & Trade Like a Champion_ - Mark Minervini</a> </li>
-        <li><a href="https://docs.google.com/document/d/e/2PACX-1vRa3uhDxUHcEt7_rYYzCUZcDkwqTau5KIxjeg6hqDsuUKjGZ3eeLihGTDMBO6gbhA/pub" target="_blank">Intra-Day Trading Tactics for Short-Term</a> </li>
-        <li><a href="https://docs.google.com/document/d/e/2PACX-1vSarMzfcUbYMpKDrf5dwHTJtMbe9kh8NpVLK81TV_jvYo8z3d-Sm44TvVne11xm3w/pub" target="_blank">Day Trading and Swing Trading the Currency Market  by Kathy Lien</a> </li>
-        <li><a href="https://docs.google.com/document/d/e/2PACX-1vRN0WsSzhLW-x5H5TaTU9Evc3P6Cukw_mNdx2mllgrugLVWJ3VG8pzy7OMIT477qw/pub" target="_blank">Trade_Like_a_Stock_Market_Wizard by Mark Minervini</a> </li>
-        <li><a href="https://ia903009.us.archive.org/4/items/JesseLivermoreReminiscencesOfAStockOperator/Jesse%20Livermore%20Reminiscences%20Of%20A%20Stock%20Operator_djvu.txt" target="_blank">RSMINiSCEKCES OF A STOCK OPERATOR</a> </li>
-      </ul>
-    </div>
-    <div class="col-6 col-md-4 col-lg-3">
-      <h3>Programming</h3><hr>
-      <ul class="ml-3">
-        <li><a href="https://docs.google.com/document/d/12ZsaSUvNE2TXkDw53JnNPaab9tOy29nC/edit?usp=drivesdk&ouid=115719975488091095936&rtpof=true&sd=true" target="_blank">Letter for Cash carrying while Elections</a> </li>
-        <li><a href="https://www.feynmanlectures.caltech.edu/" target="_blank">Feynman Lectures</a> </li>
-        <li><a href="https://docs.google.com/document/d/1u5kgj_BGNCV33LAzmMKlbsw78rfGsCmganTryE1smVk/edit?usp=drivesdk" target="_blank">Rakesh Shah audio Transcription</a> </li>
-        <li><a href="https://docs.google.com/document/d/1A0QzIhnWxtbt13hVj1BdzfVwSVyKVdqv/edit" target="_blank">Standard Operating Procedure - SOP</a> </li>
-        <li><a href="https://showoffsop.neocities.org/" target="_blank">SOP Website</a> </li>
-        <li><a href="https://ebookfoundation.github.io/free-programming-books/books/free-programming-books-langs.html" target="_blank">Free Programming Books</a> </li>
-        <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRwv9y0hxMiFiHBO3D8OYS_SLoAr_gRe3wj0BGNtLnCBfjQsy01RVyNrXQY99KCqc13Hu-eac0xuRxn/pubhtml?gid=272346156&single=true" target="_blank">NSE-Deliverywise Stocks</a> </li>
-        <li><a href="https://html.com" target="_blank">HTML</a> </li>
-        <li><a href="https://web.dev/learn/css" target="_blank">CSS</a> </li>
-        <li><a href="https://javascript.info" target="_blank">JavaScript</a> </li>
-        <li><a href="https://react-tutorial.app" target="_blank">React</a> </li>
-        <li><a href="https://rapidapi.com/learn" target="_blank">API</a> </li>
-        <li><a href="https://learnpython.org" target="_blank">Python</a> </li>
-        <li><a href="https://w3schools.com/sql" target="_blank">SQL</a> </li>
-        <li><a href="https://git-scm.com/book" target="_blank">Git3</a> </li>
-        <li><a href="https://docs.google.com/document/d/e/2PACX-1vSw9rTnms7Au0Un0S6RUH_hy61HuI-x4NCZcs403CMZnsHAB7IYVhN-p1e1Y1VezQ/pub" target="_blank">Docker_in_Practice_Ian_Miell,_Aidan</a> </li>
-        <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRuGxBrOnEfRFt-wRmDkHRqzkcXKR7so3OjUaP1qoNLAbLqXXdmUaIOKOOKeU2CXcVwTUuBdWTAvv8z/pubhtml?gid=643234261&single=true" target="_blank">QR code</a> </li>
-        <li><a href="https://docs.google.com/document/d/e/2PACX-1vSjWoq7e6vCD1iwz7Ggb-Gn_6y5a0xBDrUliNKD6Midy5hPDwDqal6TQGAvlRCRXA/pub" target="_blank">tAILWIND</a> </li>
-        
-        
-      </ul>
-    </div>
-
-    <div class="col-6 col-md-4 col-lg-3">
-      <h3>Links</h3><hr>
-      <ul class="ml-3">
-        <li><a href="https://docs.google.com/document/d/12ZsaSUvNE2TXkDw53JnNPaab9tOy29nC/edit?usp=drivesdk&ouid=115719975488091095936&rtpof=true&sd=true" target="_blank">Letter for Cash carrying while Elections</a> </li>
-        <li><a href="https://www.feynmanlectures.caltech.edu/" target="_blank">Feynman Lectures</a> </li>
-        <li><a href="https://docs.google.com/document/d/1u5kgj_BGNCV33LAzmMKlbsw78rfGsCmganTryE1smVk/edit?usp=drivesdk" target="_blank">Rakesh Shah audio Transcription</a> </li>
-        <li><a href="https://docs.google.com/document/d/1A0QzIhnWxtbt13hVj1BdzfVwSVyKVdqv/edit" target="_blank">Standard Operating Procedure - SOP</a> </li>
-        <li><a href="https://showoffsop.neocities.org/" target="_blank">SOP Website</a> </li>
-        <li><a href="https://ebookfoundation.github.io/free-programming-books/books/free-programming-books-langs.html" target="_blank">Free Programming Books</a> </li>
-        <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRwv9y0hxMiFiHBO3D8OYS_SLoAr_gRe3wj0BGNtLnCBfjQsy01RVyNrXQY99KCqc13Hu-eac0xuRxn/pubhtml?gid=272346156&single=true" target="_blank">NSE-Deliverywise Stocks</a> </li>
-        <li><a href="https://html.com" target="_blank">HTML</a> </li>
-        <li><a href="https://web.dev/learn/css" target="_blank">CSS</a> </li>
-        <li><a href="https://javascript.info" target="_blank">JavaScript</a> </li>
-        <li><a href="https://react-tutorial.app" target="_blank">React</a> </li>
-        <li><a href="https://rapidapi.com/learn" target="_blank">API</a> </li>
-        <li><a href="https://learnpython.org" target="_blank">Python</a> </li>
-        <li><a href="https://w3schools.com/sql" target="_blank">SQL</a> </li>
-        <li><a href="https://git-scm.com/book" target="_blank">Git</a> </li>
-      </ul>
-    </div>
-
-    <div class="col-6 col-md-4 col-lg-3">
-      <h3>Stationeries</h3><hr>
-      <ul class="ml-3">
-        <li><a href="https://docs.google.com/document/d/12ZsaSUvNE2TXkDw53JnNPaab9tOy29nC/edit?usp=drivesdk&ouid=115719975488091095936&rtpof=true&sd=true" target="_blank">Letter for Cash carrying while Elections</a> </li>
-        <li><a href="https://docs.google.com/document/d/e/2PACX-1vSN6nIt2mmLQZk5twXN0PpQW51WMDofI08AeFYAR2_6M0wbwUJdqJBgczAu6BeFk__kjTwm4TwytyKP/pub" target="_blank">Letter to GunduRao(Eng)</a> </li>
-        <li><a href="https://docs.google.com/document/d/e/2PACX-1vTXAoXFMw0o5O5y5KUlvPGv37wiuHOOiCGzHwzjYWn8KBhzBKXz93F8KXjTV8n2wWWfryXiTS4odOaV/pub" target="_blank">Letter to GunduRao(Kan)</a> </li>
-        <li><a href="https://docs.google.com/document/d/e/2PACX-1vQ22gm2OS0_YVRnkM57UOeVz9x8ixHk6UmTasUVpzxHLJzuTaIr6H8dsPlrb5AlCQ/pub" target="_blank">You-Can-Win-by-Shiv-Khera</a> </li>
-        <li><a href="https://docs.google.com/document/d/e/2PACX-1vQ22gm2OS0_YVRnkM57UOeVz9x8ixHk6UmTasUVpzxHLJzuTaIr6H8dsPlrb5AlCQ/pub" target="_blank">SOP Website</a> </li>
-        <li><a href="https://ebookfoundation.github.io/free-programming-books/books/free-programming-books-langs.html" target="_blank">Free Programming Books</a> </li>
-        <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRwv9y0hxMiFiHBO3D8OYS_SLoAr_gRe3wj0BGNtLnCBfjQsy01RVyNrXQY99KCqc13Hu-eac0xuRxn/pubhtml?gid=272346156&single=true" target="_blank">NSE-Deliverywise Stocks</a> </li>
-        <li><a href="https://html.com" target="_blank">HTML</a> </li>
-        <li><a href="https://web.dev/learn/css" target="_blank">CSS</a> </li>
-        <li><a href="https://javascript.info" target="_blank">JavaScript</a> </li>
-        <li><a href="https://react-tutorial.app" target="_blank">React</a> </li>
-        <li><a href="https://rapidapi.com/learn" target="_blank">API</a> </li>
-        <li><a href="https://learnpython.org" target="_blank">Python</a> </li>
-        <li><a href="https://drive.google.com/drive/folders/186OC9t2tYv-rZQ3dv_VJ2TRHCvE5GldU" target="_blank">gdrive trade books</a> </li>
-        <li><a href="https://git-scm.com/book" target="_blank">Git</a> </li>
-        <li><a href="https://medium.com/@marcrinemm/how-to-dockerize-frappe-applications-f3034be6d146" target="_blank">How to Dockerize Frappe Applications</a> </li>
-        <li><a href="https://docs.github.com/en/get-started/start-your-journey/about-github-and-git" target="_blank">About GitHub and Git</a> </li>
-        <li><a href="https://codewithkarani.com/2024/04/06/installing-erpnext-via-docker-for-beginners-a-step-by-step-guide/" target="_blank">INSTALLING ERPNEXT VIA DOCKER FOR BEGINNERS</a> </li>
-      </ul>
+<main class="container mt-4">
+  <!-- Search Bar -->
+  <div class="row mb-4">
+    <div class="col-md-8 mx-auto">
+      <div class="input-group">
+        <span class="input-group-text"><i class="fa-solid fa-search"></i></span>
+        <input type="text" id="searchInput" class="form-control" placeholder="Search for any link...">
+      </div>
     </div>
   </div>
-</div>
+
+  <div class="row g-4">
+    
+    <!-- Programming & Development -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card">
+        <div class="card-header">Programming & Development</div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item link-item"><i class="fa-solid fa-book"></i><a href="https://ebookfoundation.github.io/free-programming-books/books/free-programming-books-langs.html" target="_blank">Free Programming Books</a></li>
+            <li class="list-group-item link-item"><i class="fa-solid fa-code"></i><a href="https://html.com" target="_blank">HTML</a></li>
+            <li class="list-group-item link-item"><i class="fa-solid fa-code"></i><a href="https://web.dev/learn/css" target="_blank">CSS</a></li>
+            <li class="list-group-item link-item"><i class="fa-solid fa-code"></i><a href="https://javascript.info" target="_blank">JavaScript</a></li>
+            <li class="list-group-item link-item"><i class="fa-solid fa-code"></i><a href="https://react-tutorial.app" target="_blank">React</a></li>
+            <li class="list-group-item link-item"><i class="fa-solid fa-code"></i><a href="https://learnpython.org" target="_blank">Python</a></li>
+            <li class="list-group-item link-item"><i class="fa-solid fa-database"></i><a href="https://w3schools.com/sql" target="_blank">SQL</a></li>
+            <li class="list-group-item link-item"><i class="fa-solid fa-code-branch"></i><a href="https://git-scm.com/book" target="_blank">Git Book</a></li>
+            <li class="list-group-item link-item"><i class="fa-brands fa-github"></i><a href="https://docs.github.com/en/get-started/start-your-journey/about-github-and-git" target="_blank">About GitHub and Git</a></li>
+            <li class="list-group-item link-item"><i class="fa-solid fa-server"></i><a href="https://rapidapi.com/learn" target="_blank">API Learning Center</a></li>
+            <li class="list-group-item link-item"><i class="fa-brands fa-docker"></i><a href="https://docs.google.com/document/d/e/2PACX-1vSw9rTnms7Au0Un0S6RUH_hy61HuI-x4NCZcs403CMZnsHAB7IYVhN-p1e1Y1VezQ/pub" target="_blank">Docker in Practice</a></li>
+            <li class="list-group-item link-item"><i class="fa-brands fa-docker"></i><a href="https://medium.com/@marcrinemm/how-to-dockerize-frappe-applications-f3034be6d146" target="_blank">Dockerize Frappe Applications</a></li>
+            <li class="list-group-item link-item"><i class="fa-brands fa-docker"></i><a href="https://codewithkarani.com/2024/04/06/installing-erpnext-via-docker-for-beginners-a-step-by-step-guide/" target="_blank">Installing ERPNext via Docker</a></li>
+            <li class="list-group-item link-item"><i class="fa-solid fa-wind"></i><a href="https://docs.google.com/document/d/e/2PACX-1vSjWoq7e6vCD1iwz7Ggb-Gn_6y5a0xBDrUliNKD6Midy5hPDwDqal6TQGAvlRCRXA/pub" target="_blank">Tailwind CSS Document</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stock Market & Trading -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card">
+        <div class="card-header">Stock Market & Trading</div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item link-item"><i class="fa-solid fa-chart-line"></i><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRwv9y0hxMiFiHBO3D8OYS_SLoAr_gRe3wj0BGNtLnCBfjQsy01RVyNrXQY99KCqc13Hu-eac0xuRxn/pubhtml?gid=272346156&single=true" target="_blank">NSE-Deliverywise Stocks</a></li>
+            <li class="list-group-item link-item"><i class="fa-solid fa-book-open"></i><a href="https://docs.google.com/document/d/e/2PACX-1vSpBTqU6zPWFaapFAvCQ41xMd1o3CnyzSqpq2DYNBTfZ8p8t7LiixttbFgPkk1nEw/pub" target="_blank">Think & Trade Like a Champion</a></li>
+            <li class="list-group-item link-item"><i class="fa-solid fa-book-open"></i><a href="https://docs.google.com/document/d/e/2PACX-1vRN0WsSzhLW-x5H5TaTU9Evc3P6Cukw_mNdx2mllgrugLVWJ3VG8pzy7OMIT477qw/pub" target="_blank">Trade Like a Stock Market Wizard</a></li>
+            <li class="list-group-item link-item"><i class="fa-solid fa-book-open"></i><a href="https://docs.google.com/document/d/e/2PACX-1vRa3uhDxUHcEt7_rYYzCUZcDkwqTau5KIxjeg6hqDsuUKjGZ3eeLihGTDMBO6gbhA/pub" target="_blank">Intra-Day Trading Tactics</a></li>
+            <li class="list-group-item link-item"><i class="fa-solid fa-book-open"></i><a href="https://docs.google.com/document/d/e/2PACX-1vSarMzfcUbYMpKDrf5dwHTJtMbe9kh8NpVLK81TV_jvYo8z3d-Sm44TvVne11xm3w/pub" target="_blank">Day & Swing Trading the Currency Market</a></li>
+            <li class="list-group-item link-item"><i class="fa-solid fa-book-open"></i><a href="https://ia903009.us.archive.org/4/items/JesseLivermoreReminiscencesOfAStockOperator/Jesse%20Livermore%20Reminiscences%20Of%20A%20Stock%20Operator_djvu.txt" target="_blank">Reminiscences Of A Stock Operator</a></li>
+            <li class="list-group-item link-item"><i class="fa-solid fa-folder"></i><a href="https://drive.google.com/drive/folders/186OC9t2tYv-rZQ3dv_VJ2TRHCvE5GldU" target="_blank">G-Drive Trade Books Folder</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Books (Multilingual) -->
+    <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
+          <div class="card-header">Books (Multilingual)</div>
+          <div class="card-body">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item link-item"><i class="fa-solid fa-book"></i><a href="https://docs.google.com/document/d/13CVBbDhXAxDjC--0Ws5jJxL14NjHPmSuMnYBS0P92Xs/edit" target="_blank">I do What I do - Raghuram Rajan (Eng)</a></li>
+                <li class="list-group-item link-item"><i class="fa-solid fa-book"></i><a href="https://docs.google.com/document/d/e/2PACX-1vQ22gm2OS0_YVRnkM57UOeVz9x8ixHk6UmTasUVpzxHLJzuTaIr6H8dsPlrb5AlCQ/pub" target="_blank">You Can Win - Shiv Khera (Eng)</a></li>
+                <li class="list-group-item link-item"><i class="fa-solid fa-book"></i><a href="https://ia801308.us.archive.org/26/items/ramjandarga.basavannamattuam0000ramj/ramjandarga.basavannamattuam0000ramj_djvu.txt" target="_blank">रिच डैड पुअर डैड (Hindi)</a></li>
+                <li class="list-group-item link-item"><i class="fa-solid fa-book"></i><a href="https://ia801308.us.archive.org/26/items/ramjandarga.basavannamattuam0000ramj/ramjandarga.basavannamattuam0000ramj_djvu.txt" target="_blank">धन-संपत्ति का मनोविज्ञान (Hindi)</a></li>
+                <li class="list-group-item link-item"><i class="fa-solid fa-book"></i><a href="https://archive.org/download/20200916_20200916_1251/%E0%A4%B6%E0%A4%95%E0%A5%8D%E0%A4%A4%E0%A4%BF%E0%A4%A6%E0%A4%BE%E0%A4%AF%E0%A5%80%20%E0%A4%B5%E0%A4%BF%E0%A4%9A%E0%A4%BE%E0%A4%B0%20%28%E0%A4%B8%E0%A5%8D%E0%A4%B5%E0%A4%BE%E0%A4%AE%E0%A5%80%20%E0%A4%B5%E0%A4%BF%E0%A4%B5%E0%A5%87%E0%A4%95%E0%A4%BE%E0%A4%A8%E0%A4%82%E0%A4%A6%29_djvu.txt" target="_blank">शक्तिदायी विचार - स्वामी विवेकानंद (Hindi)</a></li>
+                <li class="list-group-item link-item"><i class="fa-solid fa-book"></i><a href="https://dn790004.ca.archive.org/0/items/accha-bolne-ki-kala-read/Accha%20Bolne%20Ki%20Kala_djvu.txt" target="_blank">अच्छा बोलने की कला (Hindi)</a></li>
+                <li class="list-group-item link-item"><i class="fa-solid fa-book"></i><a href="https://docs.google.com/document/d/e/2PACX-1vSyw4kYP3VlnEN-B3FuqHvFeZYm0naFqV8_YP_JrbV_M7iO90uihI_QgPz13pseTiSxy92BisWqJbxt/pub" target="_blank">कश्मीर और कश्मीरी पंडित (Hindi)</a></li>
+                <li class="list-group-item link-item"><i class="fa-solid fa-book"></i><a href="https://ia801308.us.archive.org/26/items/ramjandarga.basavannamattuam0000ramj/ramjandarga.basavannamattuam0000ramj_djvu.txt" target="_blank">ಬಸವಣ್ಣ ಮತ್ತು ಅಂಬೇಡ್ಕರ್... (Kannada)</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    <!-- Miscellaneous & Documents -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card">
+        <div class="card-header">Miscellaneous & Documents</div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item link-item"><i class="fa-solid fa-atom"></i><a href="https://www.feynmanlectures.caltech.edu/" target="_blank">Feynman Lectures on Physics</a></li>
+            <li class="list-group-item link-item"><i class="fa-solid fa-file-lines"></i><a href="https://docs.google.com/document/d/1A0QzIhnWxtbt13hVj1BdzfVwSVyKVdqv/edit" target="_blank">Standard Operating Procedure (SOP)</a></li>
+            <li class="list-group-item link-item"><i class="fa-solid fa-sitemap"></i><a href="https://showoffsop.neocities.org/" target="_blank">SOP Website</a></li>
+            <li class="list-group-item link-item"><i class="fa-solid fa-file-audio"></i><a href="https://docs.google.com/document/d/1u5kgj_BGNCV33LAzmMKlbsw78rfGsCmganTryE1smVk/edit?usp=drivesdk" target="_blank">Rakesh Shah Audio Transcription</a></li>
+            <li class="list-group-item link-item"><i class="fa-solid fa-file-invoice-dollar"></i><a href="https://docs.google.com/document/d/12ZsaSUvNE2TXkDw53JnNPaab9tOy29nC/edit?usp=drivesdk&ouid=115719975488091095936&rtpof=true&sd=true" target="_blank">Letter for Cash Carrying (Elections)</a></li>
+            <li class="list-group-item link-item"><i class="fa-solid fa-file-pen"></i><a href="https://docs.google.com/document/d/e/2PACX-1vSN6nIt2mmLQZk5twXN0PpQW51WMDofI08AeFYAR2_6M0wbwUJdqJBgczAu6BeFk__kjTwm4TwytyKP/pub" target="_blank">Letter to GunduRao (Eng)</a></li>
+            <li class="list-group-item link-item"><i class="fa-solid fa-file-pen"></i><a href="https://docs.google.com/document/d/e/2PACX-1vTXAoXFMw0o5O5y5KUlvPGv37wiuHOOiCGzHwzjYWn8KBhzBKXz93F8KXjTV8n2wWWfryXiTS4odOaV/pub" target="_blank">Letter to GunduRao (Kan)</a></li>
+            <li class="list-group-item link-item"><i class="fa-solid fa-qrcode"></i><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRuGxBrOnEfRFt-wRmDkHRqzkcXKR7so3OjUaP1qoNLAbLqXXdmUaIOKOOKeU2CXcVwTUuBdWTAvv8z/pubhtml?gid=643234261&single=true" target="_blank">QR code Document</a></li>
+            <li class="list-group-item link-item"><i class="fa-solid fa-file-lines"></i><a href="https://docs.google.com/document/d/e/2PACX-1vS8c9PGjA26H5Kee_ThRy-n1uzgvBvYoUOk6XhnxmS1RZqbghdc1toe0UxOz5L6Pw/pub" target="_blank">New Shared Document</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="text-center text-muted p-4">
+    <p>&copy; 2025 Awesome Links</p>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // --- Live Search Functionality ---
+    const searchInput = document.getElementById('searchInput');
+    const linkItems = document.querySelectorAll('.link-item');
+
+    searchInput.addEventListener('keyup', (e) => {
+        const searchTerm = e.target.value.toLowerCase();
+
+        linkItems.forEach(item => {
+            const text = item.textContent.toLowerCase();
+            if (text.includes(searchTerm)) {
+                item.classList.remove('hide');
+            } else {
+                item.classList.add('hide');
+            }
+        });
+    });
+
+    // --- Dark Mode Toggle ---
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const body = document.body;
+    const icon = themeToggleBtn.querySelector('i');
+
+    // Function to set the theme
+    const setTheme = (isDark) => {
+        body.classList.toggle('dark-mode', isDark);
+        icon.classList.toggle('fa-sun', isDark);
+        icon.classList.toggle('fa-moon', !isDark);
+        localStorage.setItem('darkMode', isDark);
+    };
+
+    // Check for saved theme in localStorage
+    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+    setTheme(isDarkMode);
+
+    // Event listener for the button
+    themeToggleBtn.addEventListener('click', () => {
+        const isCurrentlyDark = body.classList.contains('dark-mode');
+        setTheme(!isCurrentlyDark);
+    });
+
+</script>
 
 </body>
 </html>
